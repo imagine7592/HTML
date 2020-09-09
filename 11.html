@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+<title>댓글기능 추가</title>
+<meta charset="utf-8">
+</head>
+<body>
+<h1><a href="index.html" target="_blank">생활코딩-1.HTML 복습노트</a></h1>
+<ol>
+<li><a href="11.html">WEB1-부록 *댓글기능 추가</li></a>
+</ol>
+<h2>부록-댓글기능 추가</h2>
+- <strong>DISQUS</strong> 사용<br>
+<ol>
+<li>로그인 한 후 admin클릭</li><br>
+<li>your sites→NEW→WEB SITE 이름입력</li><br>
+<li>카테고리 지정→create site→basic subscribe 클릭</li><br>
+<li>→아래 univversal code 항목에서 코드 복사해서 붙여넣기</li>
+<p>
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://coding-18.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</p>
+</body>
+</html>
